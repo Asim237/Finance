@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.financial.app-mergeDebugResources-32:/layout/viewholder_stock.xml",
+        "source": "com.example.financial.app-main-35:/layout/viewholder_stock.xml"
+    },
+    {
+        "merged": "com.example.financial.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "com.example.financial.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.financial.app-mergeDebugResources-32:/layout/viewholder_crypto.xml",
+        "source": "com.example.financial.app-main-35:/layout/viewholder_crypto.xml"
+    }
+]
