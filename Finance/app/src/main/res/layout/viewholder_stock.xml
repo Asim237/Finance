@@ -9,7 +9,7 @@
     android:background="@color/ligth_purple">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView"
+        android:id="@+id/logoImage"
         android:layout_width="38dp"
         android:layout_height="38dp"
         android:layout_marginStart="15dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/nameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -27,13 +27,13 @@
         android:text="Bitcoin"
         android:textColor="@color/black"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/logoImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
-        app:layout_constraintTop_toTopOf="@+id/appCompatImageView" />
+        app:layout_constraintStart_toEndOf="@+id/logoImage"
+        app:layout_constraintTop_toTopOf="@+id/logoImage" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/priceTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -42,10 +42,10 @@
         android:textColor="@color/black"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/changePercentTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -56,7 +56,7 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/priceTxt" />
 
     <com.majorik.sparklinelibrary.SparkLineLayout
         android:id="@+id/sparkLineLayout"
@@ -67,7 +67,7 @@
         android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/nameTxt"
         app:s_line_color="#1AFF00"
         app:s_line_thickness="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

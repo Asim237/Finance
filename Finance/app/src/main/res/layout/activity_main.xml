@@ -86,13 +86,13 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/stockView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:paddingStart="24dp"
-                android:paddingEnd="24dp"
 
-                />
+                android:paddingEnd="24dp" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -269,14 +269,15 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cryptoView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:paddingStart="24dp"
-                android:paddingEnd="24dp"
 
-                />
+                android:paddingEnd="24dp" />
         </LinearLayout>
     </ScrollView>
 
