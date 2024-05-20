@@ -38,6 +38,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\HP\\AndroidStudioProjects\\Finance\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,318",
+                        "endLines": "5,7",
+                        "endColumns": "12,66",
+                        "endOffsets": "312,380"
+                    },
+                    "to": {
+                        "startLines": "2463,6386",
+                        "startColumns": "4,4",
+                        "startOffsets": "172773,446454",
+                        "endLines": "2466,6386",
+                        "endColumns": "12,65",
+                        "endOffsets": "172944,446515"
+                    }
+                },
+                {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\0ef9046d9f83a4eb3826b3940db4bec2\\transformed\\appcompat-resources-1.6.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,18,24,34,50",
@@ -92,6 +111,23 @@
                         "endLines": "507,1106,1107,1108,1116,1117,1118,1804,12604",
                         "endColumns": "55,58,47,55,74,75,71,65,24",
                         "endOffsets": "25731,66184,66232,66288,66974,67050,67122,120288,763398"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HP\\AndroidStudioProjects\\Finance\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "2,4,6,5,3",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,139,232,186,97",
+                        "endColumns": "41,46,40,45,41",
+                        "endOffsets": "92,181,268,227,134"
+                    },
+                    "to": {
+                        "startLines": "641,699,947,954,961",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "32857,36893,55631,56083,56536",
+                        "endColumns": "41,46,40,45,41",
+                        "endOffsets": "32894,36935,55667,56124,56573"
                     }
                 },
                 {
@@ -260,40 +296,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HP\\Downloads\\Financial\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "2,4,6,5,3",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,139,232,186,97",
-                        "endColumns": "41,46,40,45,41",
-                        "endOffsets": "92,181,268,227,134"
-                    },
-                    "to": {
-                        "startLines": "641,699,947,954,961",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "32857,36893,55631,56083,56536",
-                        "endColumns": "41,46,40,45,41",
-                        "endOffsets": "32894,36935,55667,56124,56573"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HP\\Downloads\\Financial\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "46",
-                        "endOffsets": "58"
-                    },
-                    "to": {
-                        "startLines": "1971",
-                        "startColumns": "4",
-                        "startOffsets": "130500",
-                        "endColumns": "46",
-                        "endOffsets": "130542"
-                    }
-                },
-                {
                     "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\90321d939ccd188f67211e77229813f2\\transformed\\lifecycle-runtime-2.6.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -368,22 +370,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HP\\Downloads\\Financial\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "C:\\Users\\HP\\AndroidStudioProjects\\Finance\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "2,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "100,318",
-                        "endLines": "5,7",
-                        "endColumns": "12,66",
-                        "endOffsets": "312,380"
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "46",
+                        "endOffsets": "58"
                     },
                     "to": {
-                        "startLines": "2463,6386",
-                        "startColumns": "4,4",
-                        "startOffsets": "172773,446454",
-                        "endLines": "2466,6386",
-                        "endColumns": "12,65",
-                        "endOffsets": "172944,446515"
+                        "startLines": "1971",
+                        "startColumns": "4",
+                        "startOffsets": "130500",
+                        "endColumns": "46",
+                        "endOffsets": "130542"
                     }
                 },
                 {

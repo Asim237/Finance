@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".mainActivity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -86,13 +86,12 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/stockView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:clipToPadding="false"
                 android:paddingStart="24dp"
-                android:paddingEnd="24dp"
-
-                />
+                android:paddingEnd="24dp" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -269,14 +268,15 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cryptoView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:paddingStart="24dp"
-                android:paddingEnd="24dp"
 
-                />
+                android:paddingEnd="24dp" />
         </LinearLayout>
     </ScrollView>
 
@@ -292,7 +292,7 @@
             android:layout_gravity="bottom"
             android:id="@+id/appBar"
             app:fabCradleVerticalOffset="10dp"
-            app:fabCradleMargin="6dp"
+            app:fabCradleMargin="10dp"
             app:fabCradleRoundedCornerRadius="60dp">
             <LinearLayout
                 android:layout_width="match_parent"

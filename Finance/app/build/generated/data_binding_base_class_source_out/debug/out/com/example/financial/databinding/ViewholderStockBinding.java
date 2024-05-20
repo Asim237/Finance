@@ -22,29 +22,30 @@ public final class ViewholderStockBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatImageView appCompatImageView;
+  public final TextView changePercentTxt;
+
+  @NonNull
+  public final AppCompatImageView logoImage;
+
+  @NonNull
+  public final TextView nameTxt;
+
+  @NonNull
+  public final TextView priceTxt;
 
   @NonNull
   public final SparkLineLayout sparkLineLayout;
 
-  @NonNull
-  public final TextView textView6;
-
-  @NonNull
-  public final TextView textView7;
-
-  @NonNull
-  public final TextView textView8;
-
   private ViewholderStockBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatImageView appCompatImageView, @NonNull SparkLineLayout sparkLineLayout,
-      @NonNull TextView textView6, @NonNull TextView textView7, @NonNull TextView textView8) {
+      @NonNull TextView changePercentTxt, @NonNull AppCompatImageView logoImage,
+      @NonNull TextView nameTxt, @NonNull TextView priceTxt,
+      @NonNull SparkLineLayout sparkLineLayout) {
     this.rootView = rootView;
-    this.appCompatImageView = appCompatImageView;
+    this.changePercentTxt = changePercentTxt;
+    this.logoImage = logoImage;
+    this.nameTxt = nameTxt;
+    this.priceTxt = priceTxt;
     this.sparkLineLayout = sparkLineLayout;
-    this.textView6 = textView6;
-    this.textView7 = textView7;
-    this.textView8 = textView8;
   }
 
   @Override
@@ -74,9 +75,27 @@ public final class ViewholderStockBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.appCompatImageView;
-      AppCompatImageView appCompatImageView = ViewBindings.findChildViewById(rootView, id);
-      if (appCompatImageView == null) {
+      id = R.id.changePercentTxt;
+      TextView changePercentTxt = ViewBindings.findChildViewById(rootView, id);
+      if (changePercentTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.logoImage;
+      AppCompatImageView logoImage = ViewBindings.findChildViewById(rootView, id);
+      if (logoImage == null) {
+        break missingId;
+      }
+
+      id = R.id.nameTxt;
+      TextView nameTxt = ViewBindings.findChildViewById(rootView, id);
+      if (nameTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.priceTxt;
+      TextView priceTxt = ViewBindings.findChildViewById(rootView, id);
+      if (priceTxt == null) {
         break missingId;
       }
 
@@ -86,26 +105,8 @@ public final class ViewholderStockBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView7;
-      TextView textView7 = ViewBindings.findChildViewById(rootView, id);
-      if (textView7 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView8;
-      TextView textView8 = ViewBindings.findChildViewById(rootView, id);
-      if (textView8 == null) {
-        break missingId;
-      }
-
-      return new ViewholderStockBinding((ConstraintLayout) rootView, appCompatImageView,
-          sparkLineLayout, textView6, textView7, textView8);
+      return new ViewholderStockBinding((ConstraintLayout) rootView, changePercentTxt, logoImage,
+          nameTxt, priceTxt, sparkLineLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

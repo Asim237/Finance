@@ -28,7 +28,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Financial" >
         <activity
-            android:name="com.example.financial.MainActivity"
+            android:name="com.example.financial.mainActivity.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

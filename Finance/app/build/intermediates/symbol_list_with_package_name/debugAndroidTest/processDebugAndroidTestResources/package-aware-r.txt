@@ -1,0 +1,3 @@
+com.example.financial.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.financial.R;
@@ -41,6 +42,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView bottomImg4;
 
   @NonNull
+  public final RecyclerView cryptoView;
+
+  @NonNull
   public final ImageView depositImg;
 
   @NonNull
@@ -54,6 +58,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final ConstraintLayout main;
+
+  @NonNull
+  public final RecyclerView stockView;
 
   @NonNull
   public final TextView t1;
@@ -87,10 +94,11 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView addImg,
       @NonNull BottomAppBar appBar, @NonNull ImageView bottomImg1, @NonNull ImageView bottomImg2,
-      @NonNull ImageView bottomImg3, @NonNull ImageView bottomImg4, @NonNull ImageView depositImg,
+      @NonNull ImageView bottomImg3, @NonNull ImageView bottomImg4,
+      @NonNull RecyclerView cryptoView, @NonNull ImageView depositImg,
       @NonNull EditText editTextText, @NonNull ImageView imageView, @NonNull ImageView imageView4,
-      @NonNull ConstraintLayout main, @NonNull TextView t1, @NonNull TextView t2,
-      @NonNull TextView t3, @NonNull TextView t4, @NonNull TextView textView,
+      @NonNull ConstraintLayout main, @NonNull RecyclerView stockView, @NonNull TextView t1,
+      @NonNull TextView t2, @NonNull TextView t3, @NonNull TextView t4, @NonNull TextView textView,
       @NonNull TextView textView2, @NonNull TextView textView3, @NonNull TextView textView5,
       @NonNull ImageView viewAllImg, @NonNull ImageView widthrawImg) {
     this.rootView = rootView;
@@ -100,11 +108,13 @@ public final class ActivityMainBinding implements ViewBinding {
     this.bottomImg2 = bottomImg2;
     this.bottomImg3 = bottomImg3;
     this.bottomImg4 = bottomImg4;
+    this.cryptoView = cryptoView;
     this.depositImg = depositImg;
     this.editTextText = editTextText;
     this.imageView = imageView;
     this.imageView4 = imageView4;
     this.main = main;
+    this.stockView = stockView;
     this.t1 = t1;
     this.t2 = t2;
     this.t3 = t3;
@@ -180,6 +190,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cryptoView;
+      RecyclerView cryptoView = ViewBindings.findChildViewById(rootView, id);
+      if (cryptoView == null) {
+        break missingId;
+      }
+
       id = R.id.deposit_img;
       ImageView depositImg = ViewBindings.findChildViewById(rootView, id);
       if (depositImg == null) {
@@ -205,6 +221,12 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.stockView;
+      RecyclerView stockView = ViewBindings.findChildViewById(rootView, id);
+      if (stockView == null) {
+        break missingId;
+      }
 
       id = R.id.t1;
       TextView t1 = ViewBindings.findChildViewById(rootView, id);
@@ -267,8 +289,9 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, addImg, appBar, bottomImg1,
-          bottomImg2, bottomImg3, bottomImg4, depositImg, editTextText, imageView, imageView4, main,
-          t1, t2, t3, t4, textView, textView2, textView3, textView5, viewAllImg, widthrawImg);
+          bottomImg2, bottomImg3, bottomImg4, cryptoView, depositImg, editTextText, imageView,
+          imageView4, main, stockView, t1, t2, t3, t4, textView, textView2, textView3, textView5,
+          viewAllImg, widthrawImg);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -22,21 +22,38 @@ public final class ViewholderCryptoBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final AppCompatImageView appCompatImageView;
+  public final TextView changePercentTxt;
+
+  @NonNull
+  public final AppCompatImageView logoImage;
+
+  @NonNull
+  public final TextView nameTxt;
+
+  @NonNull
+  public final TextView priceTxt;
+
+  @NonNull
+  public final TextView propertyAmountTxt;
+
+  @NonNull
+  public final TextView propertySizeTxt;
 
   @NonNull
   public final SparkLineLayout sparkLineLayout;
 
-  @NonNull
-  public final TextView textView4;
-
   private ViewholderCryptoBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppCompatImageView appCompatImageView, @NonNull SparkLineLayout sparkLineLayout,
-      @NonNull TextView textView4) {
+      @NonNull TextView changePercentTxt, @NonNull AppCompatImageView logoImage,
+      @NonNull TextView nameTxt, @NonNull TextView priceTxt, @NonNull TextView propertyAmountTxt,
+      @NonNull TextView propertySizeTxt, @NonNull SparkLineLayout sparkLineLayout) {
     this.rootView = rootView;
-    this.appCompatImageView = appCompatImageView;
+    this.changePercentTxt = changePercentTxt;
+    this.logoImage = logoImage;
+    this.nameTxt = nameTxt;
+    this.priceTxt = priceTxt;
+    this.propertyAmountTxt = propertyAmountTxt;
+    this.propertySizeTxt = propertySizeTxt;
     this.sparkLineLayout = sparkLineLayout;
-    this.textView4 = textView4;
   }
 
   @Override
@@ -66,9 +83,39 @@ public final class ViewholderCryptoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.appCompatImageView;
-      AppCompatImageView appCompatImageView = ViewBindings.findChildViewById(rootView, id);
-      if (appCompatImageView == null) {
+      id = R.id.changePercentTxt;
+      TextView changePercentTxt = ViewBindings.findChildViewById(rootView, id);
+      if (changePercentTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.logoImage;
+      AppCompatImageView logoImage = ViewBindings.findChildViewById(rootView, id);
+      if (logoImage == null) {
+        break missingId;
+      }
+
+      id = R.id.nameTxt;
+      TextView nameTxt = ViewBindings.findChildViewById(rootView, id);
+      if (nameTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.priceTxt;
+      TextView priceTxt = ViewBindings.findChildViewById(rootView, id);
+      if (priceTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.propertyAmountTxt;
+      TextView propertyAmountTxt = ViewBindings.findChildViewById(rootView, id);
+      if (propertyAmountTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.propertySizeTxt;
+      TextView propertySizeTxt = ViewBindings.findChildViewById(rootView, id);
+      if (propertySizeTxt == null) {
         break missingId;
       }
 
@@ -78,14 +125,8 @@ public final class ViewholderCryptoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
-        break missingId;
-      }
-
-      return new ViewholderCryptoBinding((ConstraintLayout) rootView, appCompatImageView,
-          sparkLineLayout, textView4);
+      return new ViewholderCryptoBinding((ConstraintLayout) rootView, changePercentTxt, logoImage,
+          nameTxt, priceTxt, propertyAmountTxt, propertySizeTxt, sparkLineLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

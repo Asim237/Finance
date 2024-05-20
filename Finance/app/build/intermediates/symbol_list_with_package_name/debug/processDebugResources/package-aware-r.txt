@@ -3190,7 +3190,6 @@ id animateToStart
 id antiClockwise
 id anticipate
 id appBar
-id appCompatImageView
 id arc
 id asConfigured
 id async
@@ -3226,6 +3225,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changePercentTxt
 id checkbox
 id checked
 id chronometer
@@ -3248,6 +3248,7 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
+id cryptoView
 id currentState
 id custom
 id customPanel
@@ -3358,6 +3359,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logoImage
 id m3_side_sheet
 id main
 id marquee
@@ -3419,6 +3421,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nameTxt
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3472,8 +3475,11 @@ id pin
 id position
 id postLayout
 id pressed
+id priceTxt
 id progress_circular
 id progress_horizontal
+id propertyAmountTxt
+id propertySizeTxt
 id radio
 id ratio
 id rectangles
@@ -3542,6 +3548,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id stockView
 id stop
 id stretch
 id submenuarrow
@@ -3575,11 +3582,7 @@ id textTop
 id textView
 id textView2
 id textView3
-id textView4
 id textView5
-id textView6
-id textView7
-id textView8
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
